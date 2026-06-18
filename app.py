@@ -16,7 +16,7 @@ RESULT_FOLDER.mkdir(exist_ok=True)
 
 DEFAULT_APP_ID   = os.environ.get("ABBYY_APP_ID", "")
 DEFAULT_PASSWORD = os.environ.get("ABBYY_PASSWORD", "")
-DEFAULT_REGION   = os.environ.get("ABBYY_REGION", "http://cloud-westus.ocrsdk.com")
+DEFAULT_REGION   = os.environ.get("ABBYY_REGION", "https://cloud-westus.ocrsdk.com")
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 20 * 1024 * 1024
